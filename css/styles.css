@@ -1,7 +1,7 @@
 :root {
   /* Colors */
   --primary-midnight-green: #014e56;
-  --primary-light-coral: #f57e7e;
+  --primary-light-coral: #f67e7e;
   --primary-white: #fff;
   --secondary-repture-blue: #79c8c7;
   --secondary-police-blue: #2c6269;
@@ -13,8 +13,8 @@
 
 @font-face {
   font-family: "Livvic";
-  src: url("Livvic-SemiBold.woff2") format("woff2"),
-    url("Livvic-SemiBold.woff") format("woff");
+  src: url("/fonts/Livvic-SemiBold.woff2") format("woff2"),
+    url("/fonts/Livvic-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -22,8 +22,8 @@
 
 @font-face {
   font-family: "Livvic";
-  src: url("Livvic-Bold.woff2") format("woff2"),
-    url("Livvic-Bold.woff") format("woff");
+  src: url("/fonts/Livvic-Bold.woff2") format("woff2"),
+    url("/fonts/Livvic-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -31,8 +31,8 @@
 
 @font-face {
   font-family: "Livvic";
-  src: url("Livvic-MediumItalic.woff2") format("woff2"),
-    url("Livvic-MediumItalic.woff") format("woff");
+  src: url("/fonts/Livvic-MediumItalic.woff2") format("woff2"),
+    url("/fonts/Livvic-MediumItalic.woff") format("woff");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -98,6 +98,7 @@ body {
 .psm {
   font-size: 1.5rem;
   line-height: 2.5rem;
+  font-weight: 600;
 }
 img {
   max-width: 100%;
@@ -153,4 +154,193 @@ img {
 }
 .btn-dark:disabled {
   opacity: 0.8;
+}
+
+.header {
+  padding-top: 73px;
+  padding-bottom: 30px;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+}
+.logo-wrapper {
+  margin-right: 80px;
+}
+.logo-img {
+  display: block;
+  width: 169px;
+  height: 49px;
+}
+.navbar {
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+.nav-link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration: none;
+  color: var(--primary-white);
+}
+.contacts-batton {
+  margin-left: auto;
+}
+.hero-btn {
+  text-decoration: none;
+  background-color: var(--primary-midnight-green);
+}
+/* Main */
+.main-content {
+  flex-grow: 1;
+}
+/* Hero section */
+
+.hero {
+  padding-top: 100px;
+  padding-bottom: 250px;
+}
+.hero-inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+}
+.hero-left {
+  max-width: 635px;
+  margin-right: 30px;
+}
+.hero-heading {
+  margin: 0;
+}
+.spotted-text {
+  color: var(--primary-light-coral);
+}
+.hero-right {
+  max-width: 445px;
+}
+.hero-right::before {
+  content: " ";
+  width: 50px;
+  height: 4px;
+  background-color: var(--secondary-repture-blue);
+  display: flex;
+  position: absolute;
+  top: 0;
+}
+.hero-text {
+  margin: 0;
+}
+
+/* Features section */
+.features {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-color: var(--secondary-secramento-state-green);
+}
+.features-inner {
+  display: flex;
+  position: relative;
+}
+.features-left-side {
+  width: 445px;
+  margin-right: 125px;
+}
+.features-left-side::before {
+  content: " ";
+  width: 50px;
+  height: 4px;
+  background-color: var(--primary-light-coral);
+  display: flex;
+  position: absolute;
+  top: -54px;
+}
+.features-heading {
+  margin: 0;
+}
+.features-box-wrapper {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.feature-box {
+  width: 540px;
+  display: flex;
+  align-items: flex-start;
+}
+.feature-box:not(:last-child) {
+  margin-bottom: 32px;
+}
+.feature-img {
+  display: block;
+  width: 72px;
+  height: 72px;
+  margin-right: 23px;
+}
+.feature-list-text {
+}
+.feature-heading {
+  margin: 0;
+  margin-bottom: 16px;
+  color: var(--primary-light-coral);
+}
+.feature-paragraph {
+  margin: 0;
+  opacity: 0.8;
+}
+.reviews-section {
+}
+.reviews-heading {
+}
+.reviews-spotted-text {
+}
+.reviews-list {
+}
+.reviews-list-item {
+}
+.reviewer-feedback-text {
+}
+.reviewer-name {
+}
+.reviewer-job {
+}
+.reviwer-avatar {
+}
+.cta-section {
+}
+.cta-heading {
+}
+.cta-button-wrapper {
+}
+.btn-cta {
+}
+.footer {
+}
+.footer-inner {
+}
+.footer-logo-nav {
+}
+.address-wrapper {
+}
+.address {
+}
+.media-links-copyright {
+}
+.media-sites-list {
+}
+.media-list-item {
+}
+.media-icon-link {
+}
+.media-icon {
+}
+.copyright-text {
 }
