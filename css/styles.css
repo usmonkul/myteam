@@ -178,6 +178,7 @@ img {
   display: flex;
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 .nav-item:not(:last-child) {
   margin-right: 40px;
@@ -188,6 +189,9 @@ img {
   line-height: 28px;
   text-decoration: none;
   color: var(--primary-white);
+}
+.nav-link:hover {
+  color: var(--primary-light-coral);
 }
 .contacts-batton {
   margin-left: auto;
@@ -296,51 +300,156 @@ img {
   margin: 0;
   opacity: 0.8;
 }
+
+/* Reviews section */
 .reviews-section {
+  padding-top: 140px;
+  padding-bottom: 150px;
+  background-color: var(--secondary-deep-jungle-green);
+}
+.reviews-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .reviews-heading {
+  text-align: center;
+  width: 932px;
+  margin: 0;
+  margin-bottom: 92px;
 }
 .reviews-spotted-text {
+  color: var(--secondary-repture-blue);
 }
 .reviews-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
 }
+
 .reviews-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.reviews-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 .reviewer-feedback-text {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 24px;
 }
 .reviewer-name {
+  margin: 0;
+  margin-bottom: 2px;
+  color: var(--secondary-repture-blue);
 }
 .reviewer-job {
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 18px;
 }
 .reviwer-avatar {
+  border-radius: 50%;
+  border: 2px solid #c4fffe;
 }
 .cta-section {
+  padding-top: 76px;
+  padding-bottom: 76px;
+  background-color: var(--primary-light-coral);
+}
+.cta-flex {
+  display: flex;
+  justify-content: center;
+}
+.cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 917px;
 }
 .cta-heading {
-}
-.cta-button-wrapper {
+  color: var(--secondary-secramento-state-green);
+  margin: 0;
 }
 .btn-cta {
+  border: 2px solid #012f34;
+  color: var(--secondary-secramento-state-green);
+  text-decoration: none;
 }
+.btn-cta:hover {
+  background-color: var(--secondary-secramento-state-green);
+  color: var(--primary-white);
+}
+
+/* Footer */
 .footer {
+  background-color: var(--secondary-dark-green);
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .footer-inner {
+  display: flex;
+  align-items: center;
 }
 .footer-logo-nav {
+  margin-right: 125px;
+}
+.footer-logo-wrapper {
+  margin-bottom: 25px;
 }
 .address-wrapper {
 }
 .address {
+  font-weight: 600;
+  line-height: 25px;
+  font-size: 15px;
+  opacity: 0.6;
+  letter-spacing: 2px;
+  color: var(--primary-white);
+}
+.contact-number {
+  color: var(--primary-white);
+  text-decoration: none;
+  opacity: 0.6;
+  letter-spacing: 2px;
 }
 .media-links-copyright {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .media-sites-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin-bottom: 50px;
 }
-.media-list-item {
+.media-list-item:not(:last-child) {
+  margin-right: 16px;
 }
 .media-icon-link {
+  color: var(--primary-white);
 }
 .media-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: var(--primary-white);
+}
+
+.media-icon:hover {
+  fill: var(--primary-light-coral);
 }
 .copyright-text {
+  color: var(--primary-white);
+  opacity: 0.6;
 }
