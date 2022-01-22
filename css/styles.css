@@ -298,8 +298,6 @@ img {
   height: 72px;
   margin-right: 23px;
 }
-.feature-list-text {
-}
 .feature-heading {
   margin: 0;
   margin-bottom: 16px;
@@ -489,6 +487,9 @@ img {
 .about-page-hero {
   padding-top: 100px;
   padding-bottom: 120px;
+  background-image: url(/img/about-hero-circle.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right calc(50% - 700px);
 }
 .about-hero-inner {
   display: flex;
@@ -524,6 +525,10 @@ img {
   padding-top: 140px;
   padding-bottom: 170px;
   background-color: var(--secondary-deep-jungle-green);
+  background-image: url(/img/directors-rect.svg), url(/img/directors-circle.svg);
+  background-repeat: no-repeat no-repeat;
+  background-position: bottom 0% right calc(50% - 640px),
+    left calc(50% - 700px) top;
 }
 .directors-inner {
   display: flex;
@@ -606,6 +611,9 @@ img {
   padding-top: 140px;
   padding-bottom: 140px;
   background-color: var(--secondary-secramento-state-green);
+  background-image: url(/img/clients-circle.svg);
+  background-repeat: no-repeat;
+  background-position: top left calc(50% - 600px);
 }
 .clients-inner {
   display: flex;
