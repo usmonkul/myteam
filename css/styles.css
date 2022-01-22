@@ -173,8 +173,6 @@ img {
   width: 169px;
   height: 49px;
 }
-.navbar {
-}
 .nav-list {
   display: flex;
   list-style: none;
@@ -432,8 +430,6 @@ img {
 .footer-logo-wrapper {
   margin-bottom: 25px;
 }
-.address-wrapper {
-}
 .address {
   font-weight: 600;
   line-height: 25px;
@@ -634,4 +630,93 @@ img {
 }
 .clients-list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+/* Contact page */
+
+.contact-page-main {
+  padding-top: 100px;
+  padding-bottom: 120px;
+  background-image: url(/img/about-hero-circle.svg),
+    url(/img/directors-circle.svg);
+  background-repeat: no-repeat no-repeat;
+  background-position: bottom 0% right calc(50% - 700px),
+    left calc(50% - 700px) top 20%;
+}
+.contact-page-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-page-left-side {
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  margin-right: 32px;
+}
+
+.contact-page-heading {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 28px;
+}
+.ask-about {
+  margin: 0;
+  font-weight: bold;
+  line-height: 40px;
+  font-size: 32px;
+  color: var(--primary-light-coral);
+  margin-bottom: 32px;
+}
+.explenations-list {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+.explenations-list-item {
+  display: flex;
+  align-items: center;
+}
+.explenations-list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.explatations-img {
+  margin-right: 23px;
+  display: block;
+  width: 72px;
+  height: 72px;
+}
+.contact-page-right-side {
+  max-width: 540px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-inputs {
+  padding: 0px 0px 17px 14px;
+  font-size: 15px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  margin-bottom: 24px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-inputs:valid {
+  border-bottom: 2px solid var(--secondary-repture-blue);
+}
+.contact-inputs:invalid {
+  border-bottom: 2px solid var(--primary-light-coral);
+  color: rgba(246, 126, 126, 0.603);
+}
+.contact-inputs:placeholder-shown {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+}
+.text-area {
+  min-width: 540px;
+}
+.submit-btn {
+  display: inline-block;
+  width: 123px;
+  cursor: pointer;
 }
