@@ -758,6 +758,10 @@ img {
 }
 
 @media (max-device-width: 768px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
   .h1lg {
     font-size: 64px;
     line-height: 56px;
@@ -765,6 +769,9 @@ img {
   .h2heading {
     font-size: 32px;
     line-height: 32px;
+  }
+  .logo-wrapper {
+    margin-right: 48px;
   }
   .hero {
     background-position: bottom -25% right 50%, left calc(50% - 700px) top 100px;
@@ -778,11 +785,15 @@ img {
     margin-bottom: 24px;
     margin-left: 0;
   }
+  .hero-left {
+    margin-right: 0;
+  }
   .hero-right::before {
     display: none;
   }
   .features-inner {
     flex-direction: column;
+    margin-left: 50px;
   }
   .features-left-side {
     margin-bottom: 64px;
@@ -801,6 +812,9 @@ img {
   .cta-section {
     background-position: left calc(50% - 320px) bottom -120px;
   }
+  .cta-inner {
+    margin-left: 40px;
+  }
   /* About page */
   .about-hero-inner {
     flex-direction: column;
@@ -809,6 +823,165 @@ img {
   }
   .aboutp-hero-text-content {
     width: 454px;
+  }
+  .aboutp-hero-text-content::before {
+    display: none;
+  }
+  .about-page-hero {
+    background-position: bottom right calc(50% - 380px);
+  }
+  /* Directors section */
+  .directiors-section {
+    background-position: bottom 0% right calc(50% - 320px),
+      left calc(50% - 380px) top;
+  }
+  .directors-list {
+    justify-content: center;
+  }
+  .directors-list-box {
+    width: 281px;
+    margin-right: 11px;
+  }
+  /* Clients section */
+  .clients-section {
+    background-position: top -50% left calc(50% - 300px);
+  }
+  /* contact page */
+  .contact-page-main {
+    background-image: url(/img/about-hero-circle.svg),
+      url(/img/directors-circle.svg);
+    background-repeat: no-repeat no-repeat;
+    background-position: bottom 0% right calc(50% - 380px),
+      left calc(50% - 400px) top 10%;
+  }
+  .contact-page-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-page-left-side {
+    margin-bottom: 64px;
+    margin-right: 0;
+    text-align: center;
+  }
+}
+/* Media query for mobile device */
+
+@media (max-device-width: 375px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .h1lg {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .plg {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .logo-wrapper {
+    margin-right: 48px;
+  }
+  .navbar {
+    display: none;
+  }
+  .contacts-batton {
+    display: none;
+  }
+  .hero {
+    padding-top: 50px;
+  }
+  .hero-heading {
+    margin-bottom: 18px;
+    margin-left: 0px;
+  }
+  /* feature */
+  .features {
+    padding-top: 100px;
+    padding-bottom: 64px;
+  }
+  .features-inner {
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .features-left-side {
+    margin-bottom: 64px;
+    width: 240px;
+  }
+  .features-left-side::before {
+    top: -32px;
+  }
+  .feature-box {
+    width: 327px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .feature-box:not(:last-child) {
+    margin-bottom: 48px;
+  }
+  .feature-img {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+  /* reviews */
+  .reviews-section {
+    background-image: url(/img/reviews-bg-right.svg),
+      url(/img/reviews-bg-left.svg);
+    background-repeat: no-repeat no-repeat;
+    background-position: bottom -8% left calc(50% + 100px),
+      left calc(50% - 120px) top;
+  }
+  .reviews-heading {
+    width: 327px;
+  }
+  .reviews-list {
+    width: 327px;
+  }
+  .reviewer-feedback-text {
+    margin-bottom: 16px;
+  }
+  .reviewer-job {
+    margin-bottom: 16px;
+  }
+  .cta-section {
+    background-position: left calc(50% - 90px) bottom -130px;
+  }
+  .cta-inner {
+    margin-left: 0px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .cta-heading {
+    margin-bottom: 24px;
+  }
+  /* Footer */
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-logo-nav {
+    margin-right: 0px;
+    margin-bottom: 24px;
+  }
+  .nav-list {
+    justify-content: center;
+  }
+  .address-wrapper {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .media-links-copyright {
+    margin-left: 0;
+    align-items: center;
+  }
+  .media-sites-list {
+    margin-bottom: 16px;
+  }
+  /* About page */
+  .aboutp-hero-text-content {
+    width: 327px;
   }
   .aboutp-hero-text-content::before {
     display: none;
