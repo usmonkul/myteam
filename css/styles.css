@@ -751,8 +751,13 @@ img {
   width: 123px;
   cursor: pointer;
 }
+.submit-btn:hover {
+  border: 2px solid var(--primary-white);
+  color: var(--primary-white);
+  background-color: transparent;
+}
 
-@media (max-device-width: 760px) {
+@media (max-device-width: 768px) {
   .h1lg {
     font-size: 64px;
     line-height: 56px;
