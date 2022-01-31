@@ -53,7 +53,7 @@ html {
 }
 
 *:focus {
-  outline: 3px dashed #000;
+  outline: 3px dashed var(--primary-light-coral);
   outline-offset: 3px;
 }
 
@@ -156,7 +156,93 @@ img {
 .btn-dark:disabled {
   opacity: 0.8;
 }
-
+/* Hamburger */
+.hamburger-menu {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: none;
+  z-index: 100;
+}
+.hamburger-menu .ham-span,
+.hamburger-menu .ham-span::before,
+.hamburger-menu .ham-span::after {
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  left: 50%;
+  margin-left: -10px;
+  width: 20px;
+  height: 2px;
+  background-color: var(--primary-white);
+}
+.hamburger-menu .ham-span::before,
+.hamburger-menu .ham-span::after {
+  content: " ";
+  display: block;
+  transition: 0.2s;
+}
+.hamburger-menu .ham-span::before {
+  transform: translateY(-5px);
+}
+.hamburger-menu .ham-span::after {
+  transform: translateY(5px);
+}
+/* for x = close */
+.humburger-closed .ham-span {
+  height: 0;
+}
+.humburger-closed .ham-span::before {
+  transform: rotate(45deg);
+}
+.humburger-closed .ham-span::after {
+  transform: rotate(-45deg);
+}
+/* Mobile nav */
+.mobile-overlay {
+}
+.mobile-nav {
+  background-image: url(/img/about-hero-circle.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 0% right -100px;
+  background-color: var(--secondary-police-blue);
+  width: 62%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  z-index: 50;
+  transition: all 0.6s;
+}
+.mobile-nav-wrapper {
+  position: absolute;
+  top: 17%;
+  left: 48px;
+}
+.mobile-nav-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  margin-bottom: 36px;
+}
+.mobile-nav-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.mobile-nav-link {
+  color: var(--primary-white);
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 28px;
+}
+.mobile-contact-btn {
+  text-decoration: none;
+  background-color: transparent;
+}
+.mobile-nav-active {
+  right: 0%;
+}
+/* Header */
 .header {
   padding-top: 73px;
   padding-bottom: 30px;
@@ -1045,5 +1131,10 @@ img {
   }
   .text-area {
     min-width: 327px;
+  }
+  /* Hamburger menu */
+  .hamburger-menu {
+    display: block;
+    margin-left: auto;
   }
 }

@@ -11,3 +11,13 @@ eltogger.forEach((Element, index) => {
     elplusImg[index].classList.toggle("plus-toggled");
   });
 });
+
+// hamburger menu
+
+const elhamBtn = document.querySelector(".hamburger-menu");
+const elmobileNav = document.querySelector(".mobile-nav");
+
+elhamBtn.addEventListener("click", function () {
+  elhamBtn.classList.toggle("humburger-closed");
+  elmobileNav.classList.toggle("mobile-nav-active");
+});
