@@ -244,7 +244,7 @@ img {
 }
 /* Header */
 .header {
-  padding-top: 73px;
+  padding-top: 72px;
   padding-bottom: 30px;
 }
 .header-inner {
@@ -877,12 +877,27 @@ img {
   .hero-right::before {
     display: none;
   }
+  .features {
+    padding-top: 136px;
+    padding-bottom: 100px;
+    background-position: top right calc(50% - 380px);
+  }
   .features-inner {
     flex-direction: column;
     margin-left: 50px;
   }
+  .features-left-side::before {
+    top: -32px;
+  }
   .features-left-side {
     margin-bottom: 64px;
+  }
+  /* Reviews */
+  .reviews-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-position: bottom -10% right calc(50% - 300px),
+      left calc(50% - 310px) top;
   }
   .reviews-heading {
     width: 573px;
@@ -902,24 +917,34 @@ img {
     margin-left: 40px;
   }
   /* About page */
+  .about-page-hero {
+    padding-top: 70px;
+    background-position: bottom right calc(50% - 380px);
+  }
   .about-hero-inner {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+  .about-hero-heading {
+    margin-right: 0;
+  }
   .aboutp-hero-text-content {
-    width: 454px;
+    width: 457px;
+    margin-top: 20px;
   }
   .aboutp-hero-text-content::before {
     display: none;
   }
-  .about-page-hero {
-    background-position: bottom right calc(50% - 380px);
-  }
   /* Directors section */
   .directiors-section {
+    padding-top: 100px;
+    padding-bottom: 128px;
     background-position: bottom 0% right calc(50% - 320px),
       left calc(50% - 380px) top;
+  }
+  .directors-heading {
+    margin-bottom: 48px;
   }
   .directors-list {
     justify-content: center;
@@ -930,10 +955,13 @@ img {
   }
   /* Clients section */
   .clients-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-position: top -50% left calc(50% - 300px);
   }
   /* contact page */
   .contact-page-main {
+    padding-top: 90px;
     background-position: bottom 0% right calc(50% - 380px),
       left calc(50% - 400px) top 10%;
   }
@@ -945,6 +973,12 @@ img {
     margin-bottom: 64px;
     margin-right: 0;
     text-align: center;
+  }
+  .contact-page-heading {
+    margin-top: 0;
+  }
+  .ask-about {
+    margin-bottom: 24px;
   }
 }
 /* Media query for mobile device */
@@ -965,6 +999,9 @@ img {
   .plg {
     font-size: 15px;
     line-height: 28px;
+  }
+  .header {
+    padding-top: 48px;
   }
   .logo-wrapper {
     margin-right: 48px;
@@ -1065,7 +1102,7 @@ img {
   }
   /* About page */
   .about-page-hero {
-    padding-top: 0;
+    padding-top: 30px;
     background-position: bottom -40% right calc(50% - 190px);
   }
   .about-hero-inner {
