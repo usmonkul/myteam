@@ -235,6 +235,9 @@ img {
   font-size: 18px;
   line-height: 28px;
 }
+.mobile-nav-link:hover {
+  color: var(--primary-light-coral);
+}
 .mobile-contact-btn {
   text-decoration: none;
   background-color: transparent;
@@ -984,6 +987,12 @@ img {
 /* Media query for mobile device */
 
 @media (max-device-width: 415px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-scroll-hidden {
+    overflow-y: hidden;
+  }
   .container {
     padding-left: 24px;
     padding-right: 24px;
