@@ -66,6 +66,7 @@ body {
   font-family: "Livvic", "Arial", sans-serif;
   background-color: var(--primary-midnight-green);
   color: var(--primary-white);
+  overflow-x: hidden;
 }
 
 /* Headings and font styles */
@@ -201,6 +202,10 @@ img {
 }
 /* Mobile nav */
 .mobile-overlay {
+  display: none;
+}
+.mobile-overlay-active {
+  display: block;
 }
 .mobile-nav {
   background-image: url(/img/about-hero-circle.svg);

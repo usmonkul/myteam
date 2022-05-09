@@ -17,9 +17,11 @@ eltogger.forEach((Element, index) => {
 
 const elhamBtn = document.querySelector(".hamburger-menu");
 const elmobileNav = document.querySelector(".mobile-nav");
+const elOverlay = document.querySelector(".mobile-overlay");
 
 elhamBtn.addEventListener("click", function () {
   elbodyScroll.classList.toggle("nav-scroll-hidden");
   elhamBtn.classList.toggle("humburger-closed");
   elmobileNav.classList.toggle("mobile-nav-active");
+  elOverlay.classList.toggle("mobile-overlay-active");
 });
